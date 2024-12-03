@@ -2,15 +2,10 @@
 
 namespace Tests\Unit;
 
-use PHPUnit\Framework\TestCase;
+use SebastianBergmann\LinesOfCode\Counter;
 
-class ExampleTest extends TestCase
-{
-    /**
-     * A basic test example.
-     */
-    public function test_that_true_is_true(): void
-    {
-        $this->assertTrue(true);
-    }
-}
+use function Pest\Livewire\livewire;
+
+it('can render page', function () {
+    // livewire(ListPosts::class)->assertSuccessful();
+});
