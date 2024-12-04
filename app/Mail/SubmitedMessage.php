@@ -38,7 +38,7 @@ class SubmitedMessage extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.submitted_message.blade',
+            view: 'emails.submitted_message',
             with: ['modelState' => $this->modelState],
         );
     }
